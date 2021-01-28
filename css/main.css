@@ -87,6 +87,94 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
+body {
+  display: grid;
+  justify-items: center;
+}
+.wrapper {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 1fr 0.2fr 1fr 1fr 2fr 1fr 1fr;
+  row-gap: 0.25rem;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: cornflowerblue;
+}
+
+.things {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 0.5fr 1fr;
+  
+}
+
+.things_hd {
+  grid-column: 1 / 5;
+}
+
+.whatsup {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.5fr 1fr;
+}
+
+.whatsup_hd {
+  grid-column: 1 / 4;
+}
+
+.latestpro {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.5fr 1fr 1fr;
+}
+
+.latestpro_hd {
+  grid-column: 1/4;
+}
+
+.ofabove {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0.5fr 1fr;
+}
+
+.ofabove_hd {
+  grid-column: 1/3;
+}
+
+
+.page_footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 0.5 1fr;
+}
+
+.page_footer_hd {
+  grid-column: 1/5;
+}
+
+.itgap {
+  column-gap: 0.25rem;
+  row-gap: 0.25rem;
+}
+
+section {
+  /* background-color: rgb(100, 237, 216); */
+}
+
+footer {
+  background-color: rgb(157, 100, 237);
+}
+
+.bgcolor_lg {
+  background-color: rgb(158, 255, 240);
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
