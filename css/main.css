@@ -92,6 +92,7 @@ body {
   display: grid;
   justify-items: center;
 }
+
 .wrapper {
   display: grid;
   height: 100vh;
@@ -161,10 +162,6 @@ nav {
 .itgap {
   column-gap: 0.25rem;
   row-gap: 0.25rem;
-}
-
-section {
-  /* background-color: rgb(100, 237, 216); */
 }
 
 footer {
