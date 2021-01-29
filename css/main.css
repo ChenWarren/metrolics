@@ -97,6 +97,7 @@ body {
 
 .wrapper {
   display: grid;
+  max-width: 1280px;
   height: 100vh;
   grid-template-columns: 1fr;
   grid-template-rows: 0.2fr 1fr 0.2fr 1fr 1fr 2fr 1fr 1fr;
@@ -140,6 +141,11 @@ nav > ul {
 
 .things_col {
   grid-row: 2/5;
+}
+
+.things_col-grid {
+  display: grid;
+  grid-template-rows: 1fr 0.5fr 2fr;
 }
 
 .whatsup {
@@ -209,6 +215,11 @@ nav > ul {
 }
 
 /* skin */
+.things_img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
 
 footer {
   background-color: rgb(157, 100, 237);
@@ -250,6 +261,12 @@ footer {
     grid-column: 1/5; 
   }
 
+  .things_col-grid {
+    grid-template-rows: 0.5fr 1fr;
+    grid-template-columns: 0.5fr 1fr;
+    justify-items: center;
+  }
+
   .whatsup_col {
     grid-row: initial;
     grid-column: 1/4;
@@ -272,6 +289,11 @@ footer {
   .page_footer_col {
     grid-row: initial;
     grid-column: 1/5;
+  }
+
+  /* skin */
+  .things_img {
+    grid-row: 1/3;
   }
 
 }
