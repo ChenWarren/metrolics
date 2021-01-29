@@ -151,7 +151,7 @@ nav > ul {
 .whatsup {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 0.5fr);
+  grid-template-rows: 0.2fr 1fr 1fr 1fr;
 }
 
 .whatsup_hd {
@@ -159,13 +159,13 @@ nav > ul {
 }
 
 .whatsup_col {
-  grid-row: 2/4;
+  grid-row: 2/5;
 }
 
 .latestpro {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(7, 0.5fr);
+  grid-template-rows: 0.2fr repeat(6, 0.5fr);
 }
 
 .latestpro_hd {
@@ -176,7 +176,7 @@ nav > ul {
   grid-row: 2/5;
 }
 
-.latestpro_col12 {
+.latestpro_col2 {
   grid-row: 5/8;
 }
 
@@ -219,6 +219,10 @@ nav > ul {
   width: 60px;
   height: 60px;
   border-radius: 50%;
+}
+
+.showcase_img {
+  width: 300px;
 }
 
 footer {
@@ -271,6 +275,7 @@ footer {
     grid-row: initial;
     grid-column: 1/4;
   }
+
 
   .latestpro_col1 {
     grid-row: initial;
