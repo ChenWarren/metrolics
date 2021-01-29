@@ -88,6 +88,8 @@ textarea {
    ========================================================================== */
 
 
+/* structur */
+
 body {
   display: grid;
   justify-items: center;
@@ -206,6 +208,8 @@ nav > ul {
   row-gap: 0.25rem;
 }
 
+/* skin */
+
 footer {
   background-color: rgb(157, 100, 237);
 }
@@ -221,6 +225,8 @@ footer {
 .txt_align_right {
   text-align: right;
 }
+
+/* responsive */
 
 @media only screen and (max-width: 550px) {
   .page_h1 {
