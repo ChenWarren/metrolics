@@ -92,42 +92,23 @@ div,
 section,
 header,
 footer {
-  border: 1px solid #999;
+  /* border: 1px solid #999; */
   min-height: 4rem;
 }
 
 .row {
   display: grid;
-  width: 85vw;
-  min-width: 60rem;
-  max-width: 85rem;
-  margin: 0 auto;
+  row-gap: 1rem;
 }
 
 .column {
-  background-color: beige;
-  margin: 1rem;
+  /* background-color: beige; */
+  /* margin: 1rem; */
 }
 
-.col_2 {
-  grid-template-columns: 1fr 1fr;
-}
 
-.col_3 {
-  grid-template-columns: repeat(3, 1fr);
-}
 
-.col_4 {
-  grid-template-columns: repeat(4, 1fr);
-}
 
-.col_5 {
-  grid-template-columns: repeat(5, 1fr);
-}
-
-.col_6 {
-  grid-template-columns: repeat(6, 1fr);
-}
 
 .col_7 {
   grid-template-columns: repeat(7, 1fr);
@@ -141,10 +122,7 @@ footer {
   grid-template-columns: 1fr 2fr;
 }
 
-.row_span {
-  grid-column-start: 1;
-  grid-column-end: -1;
-}
+
 
 /* ==========================================================================
 LAYOUT
@@ -157,32 +135,93 @@ LAYOUT
 
 /* Small only */
 @media screen and (max-width: 39.9375em) {
+  .s_hide {
+    display: none;
+  }
   
 }
 
 
 /* Medium and up */
 @media screen and (min-width: 40em) {
+
+  .row {
+    display: grid;
+    width: 85vw;
+    /* min-width: 60rem; */
+    max-width: 70rem;
+    margin: 0 auto;
+  }
+
+  .m_col_2 {
+    grid-template-columns: 1fr 1fr;
+  }
   
+  .m_col_3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .m_col_4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .m_col_5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  
+  .row_span {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
 }
 
 
 /* Medium only */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-  
+  .m_hide {
+    display: none;
+  }
   
 }
 
 
 /* Large and up */
 @media screen and (min-width: 64em) {
+  .l_col_2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .l_col_3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .l_col_4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .l_col_5 {
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 1rem;
+  }
+
+  .l_col_6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  
+  .row_span {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
 
 }
 
 
 /* Large only */
 @media screen and (min-width: 64em) and (max-width: 74.9375em) {
-
+  .l_hide {
+    display: none;
+  }
 }
 
 
