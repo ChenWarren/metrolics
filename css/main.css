@@ -107,7 +107,9 @@ footer {
 }
 
 
-
+.main_menu {
+  text-align: end;
+}
 
 
 .col_7 {
@@ -138,7 +140,9 @@ LAYOUT
   .s_hide {
     display: none;
   }
-  
+  .s_col_5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 
 
@@ -148,8 +152,6 @@ LAYOUT
   .row {
     display: grid;
     width: 85vw;
-    /* min-width: 60rem; */
-    max-width: 70rem;
     margin: 0 auto;
   }
 
@@ -188,6 +190,17 @@ LAYOUT
 
 /* Large and up */
 @media screen and (min-width: 64em) {
+
+  .row {
+    display: grid;
+    width: 85vw;
+    margin: 0 auto;
+  }
+
+  .l_hide {
+    display: none;
+  }
+
   .l_col_2 {
     grid-template-columns: 1fr 1fr;
   }
@@ -219,9 +232,7 @@ LAYOUT
 
 /* Large only */
 @media screen and (min-width: 64em) and (max-width: 74.9375em) {
-  .l_hide {
-    display: none;
-  }
+  
 }
 
 
